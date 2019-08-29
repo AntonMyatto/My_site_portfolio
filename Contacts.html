@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Сайт Front-end developer</title>
+<link rel="shortcut icon" type="image/ico" href="img/computer.ico">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Rubik+Mono+One|Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/163ac8f137.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="jquery.passwordstrength.js"></script>
+</head>
+<body>
+<div class="loader_bg">
+    <h1>Загружаем контакты...</h1>
+  <div class="loader"></div>
+</div>
+<div class="header-contact"><nav>
+      <div class="menu-icon">
+         <i class="fa fa-bars fa-2x"></i>
+        </div>
+            <div class="logo">&#60;<i class="fas fa-laptop-code"></i>&#62;</div>
+                        <div class="menu">
+                                 <ul>
+                                    <li><a href="index.html" class="cool-link">&#60; На главную &#62;</a></li>
+                                    <li><a href="Contacts.html" class="cool-link">&#60; Зарегистрироваться &#62;</a></li>
+                                 </ul>
+                        </div>
+                  </nav>
+              </div>
+<div id="main-contacts">
+    <div class="form">
+  <form>
+      <img src="img/user.png">
+      <h1>Присоединяйся</h1>
+     <div class="input-box">
+        <span class="span-contacts"><i class="fa fa-user-o" aria-hidden="true"></i></span> 
+       <input type="text" placeholder="Ваше имя" required> 
+     </div>
+     <div class="input-box">
+        <span class="span-contacts"><i class="fa fa-envelope-o" aria-hidden="true"></i></span> 
+       <input type="email" placeholder="Ваша почта" required> 
+     </div>
+     <div class="input-box">
+        <span class="span-contacts"><i class="fa fa-key" aria-hidden="true"></i></span> 
+       <input type="password" id="password" placeholder="Пароль" required> 
+     </div>
+    <button type="submit" id="button-reg"><i class="fa fa-sign-in"></i>Регистрация</button>
+  </form>    
+</div>
+</div>
+<!--end main.contacts-->
+<script type="text/javascript">
+      // Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+<script type="text/javascript">
+     $(function(){
+         $("#password").passwordStrength();
+     })
+</script>
+<script>
+      setTimeout(function(){
+            $('.loader_bg').fadeToggle();   
+               }, 500);
+</script>
+<script>
+            window.replainSettings = { id: 'f16a7c7f-5f5a-486c-b670-b4cfa3f794e5' };
+            (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+            var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+            })('https://widget.replain.cc/dist/client.js');
+      </script>
+<script>
+        $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 40) {
+              $('#topBtn').fadeIn();
+          }else{
+             $('#topBtn').fadeOut(); 
+          } 
+        });
+           $("#topBtn").click(function(){
+           $('html,body').animate({scrollTop : 0},800);
+    });           
+     });
+</script>
+</body>
+</html>
