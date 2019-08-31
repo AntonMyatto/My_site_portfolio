@@ -302,7 +302,7 @@ i.service-icon {
 }
 /*end map*/
 
-/*portfolio*/
+/*portfolio------------------*/
 #portfolio{
     width: 100%;
     height: 150px;
@@ -311,6 +311,103 @@ i.service-icon {
     overflow: hidden;
 }
 /*end portfolio*/
+
+/*blog---------------------*/
+.blog{
+    margin: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blog-grid-content{
+    display: grid;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 20px;
+    color: black;
+    max-width: 1170px;
+    grid-gap: 0.5em;
+    justify-items: stretch;
+}
+
+.item-1 img{
+    width: 772.13px;
+    height: 359.6px;
+}
+
+.item-2 img{
+    width: 387.86px;
+    height: 359.6px;
+}
+
+.item-3 img{
+    width: 772.16px;
+    height: 359.6px;
+}
+
+.item-4 img{
+    width: 1169.99px;
+    height: 459.6px;
+}
+
+.item-5 img{
+    width: 387.83px;
+    height: 359.6px;
+}
+
+
+.item-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.item-2{
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.item-3{
+    grid-column: 2/4;
+    grid-row: 4;
+}
+
+.item-4{
+     grid-column: 1/4;
+}
+
+.item-5{
+}
+
+.blog-h1{
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.item-1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.item-2:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.item-3:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.item-4:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.item-5:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/*end blog-----------------*/
 
 /*contacts and footer*/
 .footer{
